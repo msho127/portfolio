@@ -1,0 +1,38 @@
+.contactWrap{
+  width: 70%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .linkStyle{
+    width:130px;
+    height: 130px;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    border-radius: 50%;
+    transition: 250ms ease-in-out;
+    &:hover{
+      transition: 200ms ease-in-out;
+      box-shadow: 0px 0px 7px #dddddd inset;
+      background: #838383;
+      color: #fff;
+      .iconSvg{
+          transition: 200ms ease-in-out;
+          fill: #fff;
+          transform: scale(0.9);
+        }
+    }
+    .iconSvg{
+      transition: 250ms ease-in-out;
+    }
+  }
+}
+
+
+
+
