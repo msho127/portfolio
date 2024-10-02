@@ -92,7 +92,7 @@ const Works = () =>  {
               <p className={styles.bd}>制作学年 : 2年</p>
               <p className={styles.bd}>code : html css js</p>
             </section>
-              <PopUp1 />
+              <PopUp2 />
             </section>
           <div className={styles.workBox}>
             <img src={workImg5_1} alt="作品5_1" className={styles.workImg3}></img>

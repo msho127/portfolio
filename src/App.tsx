@@ -10,7 +10,7 @@ import NotFound from "./components/NotFound";
 function App() {
   return (
     <BrowserRouter>
-    <div className="loding">
+    {/* <div className="loding">
       <svg width="100" height="100vh" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" stroke="#888" strokeWidth="1.5">
           <path d="M0,100 L120,0" />
@@ -36,7 +36,7 @@ function App() {
           <p>PORTFOLIO</p>
         </div>
       </div>
-    </div>
+    </div> */}
     <header className="ggfnt ggfntjp">
       <h1>MORITA SHOTARO</h1>
       <div className="linkBox">

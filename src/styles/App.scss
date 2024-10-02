@@ -18,7 +18,7 @@ header{
   display: flex;
   justify-content: space-between;
   h1{
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     color: #333;
   }
   .linkBox{
@@ -32,9 +32,9 @@ header{
       text-align: center;
       font-size: 3rem;
       text-decoration: none;
-      transition: 0.5s ease-in-out;
+      transition: 0.2s ease-in-out;
       &:hover{
-        transition: 0.3s ease-in-out;
+        transition: 0.1s ease-in-out;
         transform: scale(1.1);
         color: #7d7d7d;
       }

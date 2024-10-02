@@ -28,6 +28,14 @@
       grid-area: text;
       margin-top: 5%;
       margin-left: 3%;
+      width: 92%;
+      font-family: "Noto Serif JP", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      p{
+        font-size: 1.8rem;
+      }
     }
     .IconsWrap{
       grid-area: IconItem;

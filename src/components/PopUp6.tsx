@@ -19,7 +19,7 @@ const PopUp = () => {
         <div className={styles.bg} onClick={togglePopUp}>
           <div className={styles.PopUp} onClick={handleChildClick}>
             <div className={styles.title}>
-              <h2>AIMA</h2>
+              <h2>NatureBlend</h2>
               <p>チーム制作(5人(リーダー)/企画、フロント画面（top、map）担当)</p>
             </div>
             <p>制作意図：旅行先の詳細と周辺の観光地など調べられたら便利じゃない？

@@ -18,9 +18,17 @@ const PopUp = () => {
       {isPopUpVisible && (
         <div className={styles.bg} onClick={togglePopUp}>
           <div className={styles.PopUp} onClick={handleChildClick}>
-            <a href="#">サイトへ飛ぶ</a>
-            <p></p>
-            <button onClick={togglePopUp} className={styles.close}>閉じる</button>
+            <div className={styles.title}>
+              <h2>コミュランド</h2>
+              <p>チーム制作(4人/企画、フロント画面担当)</p>
+            </div>
+            <p>制作意図：不登校児の社会復帰を手助け</p>
+            <p>ターゲット:中学生、高校生</p>
+            <br />
+            <p>三年生前期に作成した作品です。</p>
+            <p>はじめてnext.jsを使った作品で
+            </p>
+            <a href="#" className={styles.link}>サイトへ飛ぶ</a>
           </div>
         </div>
       )}
