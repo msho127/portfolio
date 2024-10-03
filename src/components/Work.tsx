@@ -13,7 +13,10 @@ import workImg6_2 from "../../public/CommuLand2.png"
 
 import PopUp1 from "./PopUp1";
 import PopUp2 from "./PopUp2";
-
+import PopUp3 from "./PopUp3";
+import PopUp4 from "./PopUp4";
+import PopUp5 from "./PopUp5";
+import PopUp6 from "./PopUp6";
 
 const Works = () =>  {
   return (
@@ -28,7 +31,7 @@ const Works = () =>  {
               <p className={styles.bd}>制作学年 : 1年</p>
               <p className={styles.bd}>code : html css</p>
             </section>
-              <PopUp1 />
+              <PopUp6 />
             </section>
           <div className={styles.workBox}>
             <img src={workImg1} alt="作品1" className={styles.workImg1}></img>
@@ -43,7 +46,7 @@ const Works = () =>  {
               <p className={styles.bd}>制作学年 : 1年</p>
               <p className={styles.bd}>ポスター</p>
             </section>
-              <PopUp2 />
+              <PopUp5 />
             </section>
           <div className={styles.workBox}>
             <img src={workImg2} alt="作品2" className={styles.workImg2}></img>
@@ -59,7 +62,7 @@ const Works = () =>  {
               <p className={styles.bd}>code : html css js</p>
               <p className={styles.bd}>Library : pug sass</p>
             </section>
-              <PopUp1 />
+              <PopUp4 />
             </section>
           <div className={styles.workBox}>
             <img src={workImg3_1} alt="作品3_1" className={styles.workImg3}></img>
@@ -76,7 +79,7 @@ const Works = () =>  {
               <p className={styles.bd}>code : html css js</p>
               <p className={styles.bd}>Library : pug sass</p>
             </section>
-              <PopUp1 />
+              <PopUp3 />
             </section>
           <div className={styles.workBox}>
             <img src={workImg4_1} alt="作品4_1" className={styles.workImg3}></img>

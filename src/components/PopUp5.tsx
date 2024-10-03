@@ -20,13 +20,12 @@ const PopUp = () => {
           <div className={styles.PopUp} onClick={handleChildClick}>
             <div className={styles.title}>
               <h2>キャンドルナイト</h2>
-              <p>チーム制作(5人(リーダー)/企画、フロント画面（top、map）担当)</p>
+              <p>個人制作</p>
             </div>
-            <p>制作意図：旅行先の詳細と周辺の観光地など調べられたら便利じゃない？
-            </p>
-            <p>ターゲット:大学生、社会人のカップル</p>
+            <p>概要：中崎町のイベントポスター</p>
+            <p>ターゲット:中崎町済美まつり</p>
             <br />
-            <p>
+            <p>工夫点：
             </p>
             <a href="#" className={styles.link}>サイトへ飛ぶ</a>
           </div>

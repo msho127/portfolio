@@ -22,13 +22,13 @@ const PopUp = () => {
               <h2>Lend me</h2>
               <p>チーム制作(5人(リーダー)/企画、フロント画面（top、map）担当)</p>
             </div>
-            <p>制作意図：旅行先の詳細と周辺の観光地など調べられたら便利じゃない？
+            <p>概要：旅行先の詳細と周辺の観光地など調べられたら便利じゃない？
             </p>
             <p>ターゲット:大学生、社会人のカップル</p>
             <br />
             <p>
             </p>
-            <a href="#" className={styles.link}>サイトへ飛ぶ</a>
+            <a href="https://click.ecc.ac.jp/ecc/smorita/work/lend%20me/" target="_blank" className={styles.link}>サイトへ飛ぶ</a>
           </div>
         </div>
       )}
