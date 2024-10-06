@@ -5,7 +5,7 @@ import "./styles/ggfont.scss";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Works from "./components/Work";
-import NotFound from "./components/NotFound";
+import Top from "./components/top";
 
 function App() {
   return (
@@ -51,7 +51,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/works/" element={<Works />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/*" element={<NotFound />} />
+            <Route path="/*" element={<About />} />
           </Routes>
       </div>
     </main>

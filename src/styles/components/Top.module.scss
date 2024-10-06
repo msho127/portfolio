@@ -1,0 +1,17 @@
+
+nav{
+  margin: auto;
+  width: 90%;
+  height: 70vh;
+  ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border:solid 1px skyblue;
+    li{
+      width: 33%;
+      text-align: center;
+    }
+  }
+}
