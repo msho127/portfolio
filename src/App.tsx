@@ -5,7 +5,7 @@ import "./styles/ggfont.scss";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Works from "./components/Work";
-import Top from "./components/top";
+// import Top from "./components/top";
 
 function App() {
   return (

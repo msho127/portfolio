@@ -26,7 +26,7 @@ const PopUp = () => {
             </p>
             <p>ターゲット:大人、家族</p>
             <br />
-            <p>
+            <p>私が学校に入って最初に作った作品です。
             </p>
             <a href="https://click.ecc.ac.jp/ecc/smorita/work/%e4%b8%80%e5%b9%b4%e5%96%ab%e8%8c%b6%e5%ba%97/cafe.html" target="_blank" className={styles.link}>サイトへ飛ぶ</a>
           </div>

@@ -20,11 +20,11 @@ const PopUp = () => {
           <div className={styles.PopUp} onClick={handleChildClick}>
             <div className={styles.title}>
               <h2>KIDS SET</h2>
-              <p>チーム制作(5人(リーダー)/企画、フロント画面（top、map）担当)</p>
+              <p>チーム制作(4人/企画、フロント画面担当)</p>
             </div>
-            <p>概要：旅行先の詳細と周辺の観光地など調べられたら便利じゃない？
+            <p>概要：文房具限定の販売サイト
             </p>
-            <p>ターゲット:大学生、社会人のカップル</p>
+            <p>ターゲット：学生、お子様がいる家族</p>
             <br />
             <p>
             </p>
