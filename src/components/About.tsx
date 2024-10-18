@@ -11,7 +11,7 @@ const About = () => {
         <div className={styles.myIcon} />
         <section className="ProfileWrap">
           <h2 id={styles.Name}>森田 翔太郎</h2>
-          <p className="ggfntjp">フロントエンジニア</p>
+          <p className="ggfntjp">WEBデザイナー</p>
           <br />
           <p className="ggfntjp">ECCコンピュータ専門学校
           <br />
