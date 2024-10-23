@@ -1,8 +1,12 @@
 import { useState } from "react";
 import styles from "../styles/components/PopUp.module.scss";
-import { PopUpData , popUpData } from "../types/data";
+import { PopUpData, popUpData } from "../types/PopUpData";
 
-const PopUp = () => {
+interface PopUpProps {
+  workNumber: number;
+}
+
+const PopUp: React.FC<PopUpProps> = ({ workNumber }) => {
   const [isPopUpVisible, setPopUpVisible] = useState(false);
   const [activePopUp, setActivePopUp] = useState<PopUpData | null>(null);
 
@@ -15,18 +19,21 @@ const PopUp = () => {
     event.stopPropagation();
   };
 
+  // workNumberをインデックスとして対応するポップアップデータを取得
+  const popUpContent = popUpData[workNumber - 1]; // 配列のインデックスに合わせるために-1
+
   return (
     <>
-      {popUpData.map((data, index) => (
-        <div key={index}>
+      {popUpContent && (
+        <div>
           <input
             type="button"
-            onClick={() => togglePopUp(data)}
+            onClick={() => togglePopUp(popUpContent)}
             value="VIEW MORE→"
             className={styles.seeWork}
           />
         </div>
-      ))}
+      )}
 
       {isPopUpVisible && activePopUp && (
         <div className={styles.bg} onClick={() => togglePopUp(null)}>
