@@ -1,6 +1,6 @@
-import styles from "../styles/components/About.module.scss"
+import styles from "../styles/components/About.module.scss";
 import "../styles/ggfont.scss";
-// import ImageIcon from "../../public/vite.svg"
+import { aboutData } from "../types/AboutData";
 import { icons } from "../types/icon";
 
 const About = () => {
@@ -9,34 +9,37 @@ const About = () => {
       <h1 className="ggfnt">About</h1>
       <div className={styles.AboutWrap}>
         <div className={styles.myIcon} />
-        <section className="ProfileWrap">
-          <h2 id={styles.Name}>森田 翔太郎</h2>
-          <p className="ggfntjp">WEBデザイナー</p>
-          <br />
-          <p className="ggfntjp">ECCコンピュータ専門学校
-          <br />
-          マルチメディア研究学科 WEBデザインコース
-          <br />
-          25年3月卒
-          </p>
-        </section>
-        <div className={styles.AboutTextWrap}>
-          <p>こんにちは、森田翔太郎です。
-            <br />私は高校生のときにおきたパンデミック、コロナの長期休暇で将来を見つめ直し、この業界で働きたいと思い、現在ECCコンピュータ専門学校で学んでいます。
+        {/* aboutData を map で動的にレンダリング */}
+        {aboutData.map((AboutData, index) => (
+          <section key={index} className="ProfileWrap">
+            <h2 id={styles.Name}>{AboutData.name}</h2>
+            <p className="ggfntjp">{AboutData.Occupation}</p>
             <br />
-            <br />長所
-            <br />私は集中力と
-            {/* <br />なぜweb業界を選んだか。
-            <br />子どもの頃から作業ゲームや動画制作などの細々とした作業が好きで、この集中力を活かせる職業につきたいと思ったからです。
-            <br />学校では新しい言語や難しい動きを挑戦しては挫折してを繰り返しています。 */}
+            <p className="ggfntjp">
+              {AboutData.school}
+              <br />
+              {AboutData.class}
+              <br />
+              {AboutData.year}年{AboutData.month}月卒
             </p>
-        </div>
+          </section>
+          ))}
+        {aboutData.map((AboutData, index) => (
+          <div key={index} className={styles.AboutTextWrap}>
+              {/* about のフィールドを dangerouslySetInnerHTML で表示 */}
+              <p dangerouslySetInnerHTML={{ __html: AboutData.about }} />
+          </div>
+        ))}
         <div className={styles.IconsWrap}>
           {icons.map((iconObj, index) => (
             <div key={index} className={styles.IconItem}>
               <iconObj.icon />
-              <span id="ggfntjp" className={styles.label}>{iconObj.label}</span>
-              <span id="ggfntjp" className={styles.year}>{iconObj.year}</span>
+              <span id="ggfntjp" className={styles.label}>
+                {iconObj.label}
+              </span>
+              <span id="ggfntjp" className={styles.year}>
+                {iconObj.year}
+              </span>
             </div>
           ))}
         </div>

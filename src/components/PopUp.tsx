@@ -45,8 +45,7 @@ const PopUp: React.FC<PopUpProps> = ({ workNumber }) => {
             <p>{activePopUp.description}</p>
             <p>{activePopUp.targetAudience}</p>
             <br />
-            <p>{activePopUp.additionalInfo}</p>
-            <a href={activePopUp.link} target="_blank" className={styles.link}>
+            <p dangerouslySetInnerHTML={{ __html: activePopUp.additionalInfo }} />            <a href={activePopUp.link} target="_blank" className={styles.link}>
               サイトへ飛ぶ
             </a>
           </div>
