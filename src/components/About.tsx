@@ -11,7 +11,7 @@ const About = () => {
         <div className={styles.myIcon} />
         {/* aboutData を map で動的にレンダリング */}
         {aboutData.map((AboutData, index) => (
-          <section key={index} className="ProfileWrap">
+          <section key={index} className="ProfileWrap" id={styles.ProfileWrap}>
             <h2 id={styles.Name}>{AboutData.name}</h2>
             <p className="ggfntjp">{AboutData.Occupation}</p>
             <br />

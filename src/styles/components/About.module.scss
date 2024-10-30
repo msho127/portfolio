@@ -51,3 +51,56 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .AboutWrap{
+      padding: 0px;
+      display: block;
+        .myIcon{
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background: #555;
+          grid-area: iconImg;
+          margin: auto;
+        }
+        #ProfileWrap{
+          text-align: center;
+        }
+        #Name{
+          text-align: center;
+          font-size: 4rem;
+          font-family: "Noto Serif JP", serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+        }
+        .AboutTextWrap{
+          grid-area: text;
+          margin-top: 60px;
+          text-align: center;
+          width: 100%;
+          font-family: "Noto Serif JP", serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          p{
+            font-size: 1.8rem;
+          }
+        }
+        .IconsWrap{
+          margin-top: 60px;
+          grid-area: IconItem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+          .IconItem{
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            vertical-align: middle;
+          }
+        }
+      }
+  }
