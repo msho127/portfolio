@@ -1,6 +1,6 @@
 import styles from "../styles/components/Work.module.scss";
 import "../styles/ggfont.scss";
-import { WorkData, workData } from "../types/WorkData";
+import { workData } from "../types/WorkData";
 import PopUp from "./PopUp";
 
 const Works = () => {
@@ -9,20 +9,12 @@ const Works = () => {
       <div>
         <ul className={styles.revers}>
           {workData.map((work) => (
-            <li key={work.number} className={styles.flexBox}>
+            <li key={work.number} className={styles.gridBox}>
               <section className={styles.textBox}>
                 <h2 className="ggfnt">
                   {work.method} <br />
                   {work.number.toString().padStart(3, "0")}
                 </h2>
-                <section className={styles.workTitle}>
-                  <h2 id={styles.title} className="ggfntjp">{work.title}</h2>
-                  <p className={styles.bd}>{work.overview}</p>
-                  <p className={styles.bd}>制作学年: {work.year}年</p>
-                  <p className={styles.bd}>code: {work.code}</p>
-                  {work.framework && <p className={styles.bd}>framework: {work.framework}</p>}
-                </section>
-                <PopUp workNumber={work.number} />
               </section>
               <div className={styles.workBox}>
                 {work.thumbnail1 && (
@@ -40,6 +32,14 @@ const Works = () => {
                   />
                 )}
               </div>
+              <section className={styles.workTitle}>
+                <h2 id={styles.title} className="ggfntjp">{work.title}</h2>
+                <p className={styles.bd}>{work.overview}</p>
+                <p className={styles.bd}>制作学年: {work.year}年</p>
+                <p className={styles.bd}>code: {work.code}</p>
+                {work.framework && <p className={styles.bd}>framework: {work.framework}</p>}
+                <PopUp workNumber={work.number} />
+              </section>
             </li>
           ))}
         </ul>

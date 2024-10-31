@@ -2,46 +2,38 @@
   display: flex;
   flex-direction: column-reverse;
 }
-.flexBox{
-  display: flex;
+.gridBox{
+  display: grid;
+  grid-template-columns:26% 74%;
+  grid-template-rows: 30vh 43vh;
+  grid-template-areas:
+  "textBox workBox"
+  "workTitle workBox";
   height: 580px;
   margin-bottom: 70px;
   &:first-child{
     margin-bottom: 0px;
   }
   .textBox{
-    width: 24%;
-    .workTitle{
-      margin-top: 80%;
-      #title{
-        font-size: 3.6rem;
-      }
-      .bd{
-        font-family: "Noto Serif JP", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        margin: 2px;
-        text-decoration: underline #333;
-      }
+    grid-area: textBox;
+  }
+  .workTitle{
+    grid-area: workTitle;
+    margin-top: 70px;
+    #title{
+      font-size: 3.6rem;
     }
-    .seeWork{
-      display: block;
-      margin-top: 20%;
-      font-size: 2.6rem;
-      text-underline-offset: 3px;
-      font-family: "Arapey", serif;
+    .bd{
+      font-family: "Noto Serif JP", serif;
+      font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
-      border: none;
-      #workBox{
-        width: 200px;
-        height: 180px;
-      }
+      margin: 2px;
+      text-decoration: underline #333;
     }
   }
   .workBox{
-    width: 76%;
+    grid-area: workBox;
     margin: 20px 0;
     border-left: 1px solid #000;
     display: flex;
@@ -63,63 +55,46 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .revers{
     display: flex;
     flex-direction: column-reverse;
   }
-  .flexBox{
+  .gridBox{
     display: block;
-    height: 580px;
-    margin-bottom: 70px;
+    height: auto;
+    margin-bottom: 100px;
     &:first-child{
       margin-bottom: 0px;
     }
-    .textBox{
-      width: 100%;
-      .workTitle{
-        margin-top: 80%;
-        #title{
-          font-size: 3.6rem;
-        }
-        .bd{
-          font-family: "Noto Serif JP", serif;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          margin: 2px;
-          text-decoration: underline #333;
-        }
+    .workTitle{
+      margin-top: 0px;
+      #title{
+        font-size: 3.6rem;
       }
-      .seeWork{
-        display: block;
-        margin-top: 20%;
-        font-size: 2.6rem;
-        text-underline-offset: 3px;
-        font-family: "Arapey", serif;
+      .bd{
+        font-family: "Noto Serif JP", serif;
+        font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        border: none;
-        #workBox{
-          width: 200px;
-          height: 180px;
-        }
+        font-size: 1.8rem;
+        margin: 2px;
+        text-decoration: underline #333;
       }
     }
     .workBox{
-      width: 76%;
-      margin: 20px 0;
-      border-left: 0px solid #000;
+      border-left: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
       .workImg1{
-        height: 80%;
+        height: 0%;
         box-shadow: 0px 10px 10px 5px #eee;
         border-radius: 5px;
       }
       .workImg2{
-        height: 90%;
+        height: 70%;
         box-shadow: 0px 10px 10px 5px #b4b4b4;
       }
       .workImg3{
