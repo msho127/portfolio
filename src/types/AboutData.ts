@@ -13,7 +13,7 @@ export interface AboutData {
 export const aboutData: AboutData[] = [
   {
     name:"森田 翔太郎",
-    Occupation:"WEBデザイナー",
+    Occupation:"フロントエンドエンジニア",
     school:"ECCコンピュータ専門学校",
     class:"マルチメディア研究学科 WEBデザインコース",
     year:25,
