@@ -21,9 +21,8 @@ function App() {
   return (
     <BrowserRouter>
       <header className="ggfnt ggfntjp">
-        <h1>MORITA SHOTARO</h1>
-        <div className="linkBox">
-          <Link to="/about" className="link" onClick={handleLinkClick}>About</Link>
+      <a href="/About"><h1>MORITA SHOTARO</h1></a>
+      <div className="linkBox">
           <Link to="/works" className="link" onClick={handleLinkClick}>Works</Link>
           <Link to="/contact" className="link" onClick={handleLinkClick}>Contact</Link>
         </div>
@@ -31,7 +30,7 @@ function App() {
           <input type="checkbox" className="menuBtn" id="menuBtn" ref={menuCheckbox} />
           <label htmlFor="menuBtn" className="menuIcon"><span className="navicon"></span></label>
           <div className="menu">
-            <Link to="/about" className="link" onClick={handleLinkClick}>About</Link>
+            <Link to="/*" className="link" onClick={handleLinkClick}>Top</Link>
             <Link to="/works" className="link" onClick={handleLinkClick}>Works</Link>
             <Link to="/contact" className="link" onClick={handleLinkClick}>Contact</Link>
           </div>
@@ -40,7 +39,6 @@ function App() {
       <main>
         <div className="box">
           <Routes>
-            <Route path="/about" element={<About />} />
             <Route path="/works/" element={<Works />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<About />} />

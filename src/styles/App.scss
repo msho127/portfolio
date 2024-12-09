@@ -17,17 +17,21 @@ header{
   margin: 20px auto 0;
   display: flex;
   justify-content: space-between;
-  h1{
-    font-size: 3.4rem;
-    color: #333;
+  a{
+    text-decoration: none;
+    h1{
+      font-size: 3.4rem;
+      color: #333;
+    }
   }
   .linkBox{
-    width: 40%;
+    width: 280px;
     height: 50px;
     display: flex;
+    text-align: right;
     .link{
       color: #333;
-      width: 40%;
+      width: 280px;
       height: 100%;
       text-align: center;
       font-size: 3rem;
@@ -122,18 +126,18 @@ main{
       color: #333;
     }
     .linkBox{
-      width: 40%;
-      height: 40px;
-      display: none;
+      width: 280px;
+      height: 50px;
+      display: flex;
+      text-align: right;
       .link{
         color: #333;
-        width: 40%;
+        width: 280px;
         height: 100%;
         text-align: center;
         font-size: 3rem;
         text-decoration: none;
         transition: 0.2s ease-in-out;
-        display: none;
         &:hover{
           transition: 0.1s ease-in-out;
           transform: scale(1.1);
@@ -141,7 +145,7 @@ main{
         }
       }
     }
-    .menuBox{
+      .menuBox{
       width: 30px;
       height: 40px;
       display: block;
