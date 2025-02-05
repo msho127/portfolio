@@ -25,16 +25,16 @@ function App() {
       <div className="linkBox">
           <Link to="/works" className="link" onClick={handleLinkClick}>Works</Link>
           <Link to="/contact" className="link" onClick={handleLinkClick}>Contact</Link>
+      </div>
+      <div className="menuBox">
+        <input type="checkbox" className="menuBtn" id="menuBtn" ref={menuCheckbox} />
+        <label htmlFor="menuBtn" className="menuIcon"><span className="navicon"></span></label>
+        <div className="menu">
+          <Link to="/*" className="link" onClick={handleLinkClick}>Top</Link>
+          <Link to="/works" className="link" onClick={handleLinkClick}>Works</Link>
+          <Link to="/contact" className="link" onClick={handleLinkClick}>Contact</Link>
         </div>
-        <div className="menuBox">
-          <input type="checkbox" className="menuBtn" id="menuBtn" ref={menuCheckbox} />
-          <label htmlFor="menuBtn" className="menuIcon"><span className="navicon"></span></label>
-          <div className="menu">
-            <Link to="/*" className="link" onClick={handleLinkClick}>Top</Link>
-            <Link to="/works" className="link" onClick={handleLinkClick}>Works</Link>
-            <Link to="/contact" className="link" onClick={handleLinkClick}>Contact</Link>
-          </div>
-        </div>
+      </div>
       </header>
       <main>
         <div className="box">
