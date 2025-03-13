@@ -25,8 +25,8 @@ export const popUpData: PopUpData[] = [
     description: "概要：ショート動画で観光地を探すことができ、ルート検索でスムーズにデートできるサービス",
     teamInfo: "チーム制作(5人(リーダー)/企画、フロント画面（top、map）担当)",
     targetAudience: "ターゲット:大学生、社会人のカップル",
-    additionalInfo: "詳細：インスタグラムのリール動画でデートスポットを探す若者が多く、さらにルート検索でアプリを介さずスムーズにデートを楽しむことができるサービス",
-    outlook : "展望：位置情報が登録されているショート動画を複数、保存したフォルダを選択、map反映で行きたいスポットが可視化されて更にプランを立てやすくすることができると考えています。",
+    additionalInfo: "はじめてapiを使用した作品です。参考ブログが少なくデザイザーが考えたデザインを実現するため、検証を使いapiのcssを理解しながらデザインしました。",
+    outlook : "",
     link: "https://click.ecc.ac.jp/ecc/smorita/work/AIMA/top.html",
   },
   {
