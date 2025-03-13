@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <header className="ggfnt ggfntjp">
-      <a href="/About"><h1>MORITA SHOTARO</h1></a>
+      <a href="/"><h1>MORITA SHOTARO</h1></a>
       <div className="linkBox">
           <Link to="/works" className="link" onClick={handleLinkClick}>Works</Link>
           <Link to="/contact" className="link" onClick={handleLinkClick}>Contact</Link>
